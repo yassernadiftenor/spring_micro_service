@@ -4,37 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2edccb09-3754-4807-9264-a53ad11a5dbe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2edccb09-3754-4807-9264-a53ad11a5dbe" name="Changes" comment="(init) : first microservice app&#10;(add) : discovery service + gateway service">
+      <change afterPath="$PROJECT_DIR$/auth_service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/AuthServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/api/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/dto/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/service/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/service/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/java/com/sample/auth_service/util/CryptoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_service/src/test/java/com/sample/auth_service/AuthServiceApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/discovery_service/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/discovery_service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/discovery_service/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/discovery_service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery_service/src/main/java/com/sample/discovery_service/DiscoveryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery_service/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gateway_service/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gateway_service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gateway_service/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gateway_service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway_service/src/main/java/com/sample/gateway_service/GatewayServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway_service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway_service/src/main/java/com/sample/gateway_service/security/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway_service/src/main/java/com/sample/gateway_service/security/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway_service/src/main/java/com/sample/gateway_service/security/RouterValidator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user_service/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user_service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user_service/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user_service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_service/src/main/java/com/sample/user_service/UserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_service/src/main/java/com/sample/user_service/api/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery_service" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway_service" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway_service/src/main/java/com/sample/gateway_service/config/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_service/src/main/java/com/sample/gateway_service/config/GatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service" beforeDir="false" afterPath="$PROJECT_DIR$/user_service" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +55,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/user_service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/gateway_service" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,32 +81,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "C:/Users/LENOVO/Desktop/Peaqock_Project/spring_micro_service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/Desktop/Peaqock_Project/spring_micro_service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -101,7 +114,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sample.auth_service.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discovery_service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sample.discovery_service.DiscoveryServiceApplication" />
@@ -133,8 +153,18 @@
       <option name="presentableId" value="Default" />
       <updated>1719393545312</updated>
       <workItem from="1719393546384" duration="2813000" />
-      <workItem from="1719396393926" duration="6750000" />
+      <workItem from="1719396393926" duration="11240000" />
+      <workItem from="1719412663595" duration="1124000" />
     </task>
+    <task id="LOCAL-00001" summary="(init) : first microservice app&#10;(add) : discovery service + gateway service">
+      <option name="closed" value="true" />
+      <created>1719408546769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719408546769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +172,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="(init) : first microservice app&#10;(add) : discovery service + gateway service" />
+    <option name="LAST_COMMIT_MESSAGE" value="(init) : first microservice app&#10;(add) : discovery service + gateway service" />
   </component>
 </project>
